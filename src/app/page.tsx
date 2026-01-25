@@ -18,7 +18,7 @@ export default function Home() {
         <section className="py-20 md:py-28 lg:py-32 bg-stone-50 dark:bg-stone-950">
           <Container>
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
-              <div className="flex flex-col items-start gap-8 max-w-2xl">
+              <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 max-w-2xl mx-auto lg:mx-0">
                 <h1 className="font-serif text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-50 sm:text-7xl">
                   Adam Glagola
                 </h1>
@@ -28,7 +28,7 @@ export default function Home() {
                   This is my digital headquarters.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full">
+                <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center lg:justify-start">
                   <div className="flex w-full max-w-sm items-center space-x-2">
                     <input
                       type="email"
@@ -40,7 +40,7 @@ export default function Home() {
                 </div>
 
                 {/* Social Links */}
-                <div className="flex gap-6 mt-2">
+                <div className="flex gap-6 mt-2 justify-center lg:justify-start">
                   <a href="https://www.instagram.com/adamglagola" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700 transition-transform hover:scale-110">
                     <Instagram className="h-6 w-6" />
                     <span className="sr-only">Instagram</span>
@@ -71,7 +71,7 @@ export default function Home() {
               {/* Hero Image */}
               <div className="relative mx-auto aspect-square w-full max-w-[400px] lg:max-w-[500px] overflow-hidden rounded-2xl shadow-2xl shadow-stone-200 dark:shadow-none grayscale hover:grayscale-0 transition-all duration-700">
                 <Image
-                  src="/hero-profile.png"
+                  src="/hero-profile.jpg"
                   alt="Adam Glagola - Builder & Thinker"
                   fill
                   className="object-cover"
