@@ -15,8 +15,13 @@ export default function Home() {
 
       <main className="flex-1 pt-16">
         {/* Hero Section */}
-        <section className="py-20 md:py-28 lg:py-32 bg-stone-50 dark:bg-stone-950">
-          <Container>
+        <section className="relative py-20 md:py-28 lg:py-32 overflow-hidden">
+          {/* Background Effects */}
+          <div className="absolute inset-0 -z-10 h-full w-full bg-stone-50 dark:bg-stone-950 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]">
+            <div className="absolute left-0 right-0 top-0 -z-10 m-auto h-[310px] w-[310px] rounded-full bg-stone-400 opacity-20 blur-[100px] dark:bg-indigo-900/30"></div>
+          </div>
+
+          <Container className="relative z-10">
             <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
               <div className="flex flex-col items-center text-center lg:items-start lg:text-left gap-8 max-w-2xl mx-auto lg:mx-0">
                 <h1 className="font-serif text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-50 sm:text-7xl">
@@ -28,7 +33,20 @@ export default function Home() {
                   This is my digital headquarters.
                 </p>
 
-                <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full justify-center lg:justify-start">
+                <div className="flex flex-wrap gap-4 mt-2 justify-center lg:justify-start">
+                  <Button asChild size="lg" className="rounded-full px-8 shadow-lg shadow-stone-200/50 dark:shadow-none hover:shadow-xl transition-all hover:-translate-y-0.5 bg-stone-900 text-white dark:bg-stone-50 dark:text-stone-900">
+                    <Link href="/projects">
+                      View Projects <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                  <Button asChild variant="outline" size="lg" className="rounded-full border-stone-300 dark:border-stone-700 hover:bg-stone-100 dark:hover:bg-stone-800">
+                    <Link href="/about">
+                      About Me
+                    </Link>
+                  </Button>
+                </div>
+
+                <div className="flex flex-col sm:flex-row gap-4 mt-8 w-full justify-center lg:justify-start">
                   <div className="flex w-full max-w-sm items-center space-x-2">
                     <input
                       type="email"
