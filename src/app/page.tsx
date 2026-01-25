@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import Link from "next/link";
-import { ArrowRight, Mail } from "lucide-react";
+import { ArrowRight, Mail, Instagram, Youtube, Linkedin, Twitter } from "lucide-react";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -13,31 +15,69 @@ export default function Home() {
 
       <main className="flex-1 pt-16">
         {/* Hero Section */}
-        <section className="py-24 md:py-32 lg:py-40 bg-stone-50 dark:bg-stone-950">
+        <section className="py-20 md:py-28 lg:py-32 bg-stone-50 dark:bg-stone-950">
           <Container>
-            <div className="flex flex-col items-start gap-8 max-w-2xl">
-              <h1 className="font-serif text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-50 sm:text-7xl">
-                Adam Glagola
-              </h1>
-              <p className="text-xl leading-relaxed text-stone-600 dark:text-stone-300">
-                Builder, Thinker, Disciplined. <br />
-                Exploring the intersection of technology, philosophy, and human potential.
-                This is my digital headquarters.
-              </p>
+            <div className="grid gap-12 lg:grid-cols-2 lg:gap-8 items-center">
+              <div className="flex flex-col items-start gap-8 max-w-2xl">
+                <h1 className="font-serif text-5xl font-bold tracking-tight text-stone-900 dark:text-stone-50 sm:text-7xl">
+                  Adam Glagola
+                </h1>
+                <p className="text-xl leading-relaxed text-stone-600 dark:text-stone-300">
+                  Builder, Thinker, Disciplined. <br />
+                  Exploring the intersection of technology, philosophy, and human potential.
+                  This is my digital headquarters.
+                </p>
 
-              <div className="flex flex-col sm:flex-row gap-4 mt-4">
-                <div className="flex w-full max-w-sm items-center space-x-2">
-                  <input
-                    type="email"
-                    placeholder="Enter your email"
-                    className="flex h-10 w-full rounded-md border border-stone-200 bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-stone-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-stone-800 dark:bg-stone-950 dark:ring-offset-stone-950 dark:placeholder:text-stone-400 dark:focus-visible:ring-stone-300"
-                  />
-                  <Button>Join the Community</Button>
+                <div className="flex flex-col sm:flex-row gap-4 mt-4 w-full">
+                  <div className="flex w-full max-w-sm items-center space-x-2">
+                    <input
+                      type="email"
+                      placeholder="Enter your email"
+                      className="flex h-10 w-full rounded-md border border-stone-200 bg-white px-3 py-2 text-sm ring-offset-background file:border-0 file:bg-transparent file:text-sm file:font-medium placeholder:text-stone-500 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-stone-950 focus-visible:ring-offset-2 disabled:cursor-not-allowed disabled:opacity-50 dark:border-stone-800 dark:bg-stone-950 dark:ring-offset-stone-950 dark:placeholder:text-stone-400 dark:focus-visible:ring-stone-300"
+                    />
+                    <Button>Join the Community</Button>
+                  </div>
                 </div>
+
+                {/* Social Links */}
+                <div className="flex gap-6 mt-2">
+                  <a href="https://www.instagram.com/adamglagola" target="_blank" rel="noopener noreferrer" className="text-pink-600 hover:text-pink-700 transition-transform hover:scale-110">
+                    <Instagram className="h-6 w-6" />
+                    <span className="sr-only">Instagram</span>
+                  </a>
+                  <a href="https://www.youtube.com/@AdamGlagola-o3" target="_blank" rel="noopener noreferrer" className="text-red-600 hover:text-red-700 transition-transform hover:scale-110">
+                    <Youtube className="h-6 w-6" />
+                    <span className="sr-only">YouTube</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/adam-g-2b015579/" target="_blank" rel="noopener noreferrer" className="text-blue-600 hover:text-blue-700 transition-transform hover:scale-110">
+                    <Linkedin className="h-6 w-6" />
+                    <span className="sr-only">LinkedIn</span>
+                  </a>
+                  <a href="https://x.com/adamglagola" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white hover:text-stone-700 dark:hover:text-stone-300 transition-transform hover:scale-110">
+                    <Twitter className="h-6 w-6" />
+                    <span className="sr-only">X (Twitter)</span>
+                  </a>
+                  <a href="mailto:adamglagolaco@gmail.com" className="text-emerald-600 hover:text-emerald-700 transition-transform hover:scale-110">
+                    <Mail className="h-6 w-6" />
+                    <span className="sr-only">Email</span>
+                  </a>
+                </div>
+
+                <p className="text-sm text-stone-500 dark:text-stone-400">
+                  Join 1,000+ others exploring growth and creation. No spam.
+                </p>
               </div>
-              <p className="text-sm text-stone-500 dark:text-stone-400">
-                Join 1,000+ others exploring growth and creation. No spam.
-              </p>
+
+              {/* Hero Image */}
+              <div className="relative mx-auto aspect-square w-full max-w-[400px] lg:max-w-[500px] overflow-hidden rounded-2xl shadow-2xl shadow-stone-200 dark:shadow-none grayscale hover:grayscale-0 transition-all duration-700">
+                <Image
+                  src="/hero-profile.png"
+                  alt="Adam Glagola - Builder & Thinker"
+                  fill
+                  className="object-cover"
+                  priority
+                />
+              </div>
             </div>
           </Container>
         </section>

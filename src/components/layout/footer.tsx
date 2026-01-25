@@ -1,6 +1,5 @@
 import { Container } from "@/components/ui/container";
-import { Github, Twitter, Linkedin, Mail } from "lucide-react";
-import Link from "next/link";
+import { Twitter, Linkedin, Mail, Instagram, Youtube } from "lucide-react";
 
 export function Footer() {
     return (
@@ -15,22 +14,26 @@ export function Footer() {
                     </div>
 
                     <div className="flex gap-6">
-                        <Link href="https://twitter.com/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
-                            <span className="sr-only">Twitter</span>
-                            <Twitter className="h-5 w-5" />
-                        </Link>
-                        <Link href="https://github.com/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
-                            <span className="sr-only">GitHub</span>
-                            <Github className="h-5 w-5" />
-                        </Link>
-                        <Link href="https://linkedin.com/in/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
+                        <a href="https://www.instagram.com/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
+                            <span className="sr-only">Instagram</span>
+                            <Instagram className="h-5 w-5" />
+                        </a>
+                        <a href="https://www.youtube.com/@AdamGlagola-o3" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
+                            <span className="sr-only">YouTube</span>
+                            <Youtube className="h-5 w-5" />
+                        </a>
+                        <a href="https://www.linkedin.com/in/adam-g-2b015579/" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
                             <span className="sr-only">LinkedIn</span>
                             <Linkedin className="h-5 w-5" />
-                        </Link>
-                        <Link href="mailto:adam@example.com" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
+                        </a>
+                        <a href="https://x.com/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
+                            <span className="sr-only">X (Twitter)</span>
+                            <Twitter className="h-5 w-5" />
+                        </a>
+                        <a href="mailto:adamglagolaco@gmail.com" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
                             <span className="sr-only">Email</span>
                             <Mail className="h-5 w-5" />
-                        </Link>
+                        </a>
                     </div>
                 </div>
 
