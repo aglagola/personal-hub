@@ -11,7 +11,6 @@ export default function NowPage() {
                     {/* Background: Focus / Active State */}
                     <div className="absolute inset-0 -z-10 h-full w-full bg-stone-50 dark:bg-stone-950">
                         <div className="absolute inset-0 bg-[linear-gradient(to_right,#8080800a_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:24px_24px]"></div>
-                        <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 h-[600px] w-[600px] rounded-full bg-emerald-500/5 dark:bg-emerald-500/10 blur-[120px] animate-pulse duration-[4000ms]"></div>
                     </div>
 
                     <Container className="relative z-10">
