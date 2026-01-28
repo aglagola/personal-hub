@@ -89,7 +89,7 @@ export default function Home() {
               {/* Hero Image */}
               <div className="relative mx-auto aspect-square w-full max-w-[400px] lg:max-w-[500px] overflow-hidden rounded-2xl shadow-2xl shadow-stone-200 dark:shadow-none grayscale hover:grayscale-0 transition-all duration-700">
                 <Image
-                  src="/hero-profile.jpg"
+                  src="/adam-hero.jpg"
                   alt="Adam Glagola - Builder & Thinker"
                   fill
                   className="object-cover"
