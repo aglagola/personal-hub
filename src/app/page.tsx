@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Navbar } from "@/components/layout/navbar";
 import { Footer } from "@/components/layout/footer";
 import Link from "next/link";
-import { ArrowRight, Mail, Instagram, Youtube, Linkedin } from "lucide-react";
+import { ArrowRight, Mail, Instagram, Youtube, Linkedin, Github } from "lucide-react";
 import { XIcon } from "@/components/ui/icons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -75,6 +75,10 @@ export default function Home() {
                   <a href="https://x.com/adamglagola" target="_blank" rel="noopener noreferrer" className="text-black dark:text-white hover:text-stone-700 dark:hover:text-stone-300 transition-transform hover:scale-110">
                     <XIcon className="h-6 w-6" />
                     <span className="sr-only">X (Twitter)</span>
+                  </a>
+                  <a href="https://github.com/aglagola" target="_blank" rel="noopener noreferrer" className="text-stone-800 dark:text-stone-200 hover:text-stone-900 dark:hover:text-stone-50 transition-transform hover:scale-110">
+                    <Github className="h-6 w-6" />
+                    <span className="sr-only">GitHub</span>
                   </a>
                   <a href="mailto:adamglagolaco@gmail.com" className="text-emerald-600 hover:text-emerald-700 transition-transform hover:scale-110">
                     <Mail className="h-6 w-6" />

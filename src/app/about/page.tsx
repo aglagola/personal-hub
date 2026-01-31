@@ -62,7 +62,7 @@ export default function AboutPage() {
                             {/* Image Column */}
                             <div className="relative aspect-[3/4] w-full overflow-hidden rounded-2xl shadow-xl grayscale hover:grayscale-0 transition-all duration-700">
                                 <Image
-                                    src="/about-profile.png"
+                                    src="/adam-about.jpg"
                                     alt="Adam Glagola - About"
                                     fill
                                     className="object-cover"
