@@ -5,34 +5,7 @@ import Link from "next/link";
 import { ArrowLeft } from "lucide-react";
 import { notFound } from "next/navigation";
 
-// Placeholder data - in a real app this would likely come from MDX files or a CMS
-const posts = {
-    "post-1": {
-        title: "The Art of Discipline",
-        date: "Jan 12, 2026",
-        content: `
-      <p>Discipline is often misunderstood as a form of punishment or self-restriction. We tend to view the disciplined person as someone who denies themselves the pleasures of life—someone who says "no" to the second slice of cake, "no" to sleeping in, "no" to the immediate gratification.</p>
-      <p>But this view is inverted. Discipline is not about restriction; it is about freedom.</p>
-      <h2>The Freedom of Structure</h2>
-      <p>When you have discipline, you are free from the tyranny of your own impulses. You are free from the chaos of indecision. When you have a plan and the discipline to execute it, you remove the burden of constant negotiation with yourself.</p>
-      <p>Jocko Willink famously says, "Discipline equals freedom." It sounds like a paradox, but it's the fundamental truth of high performance.</p>
-      <h2>Building the Muscle</h2>
-      <p>Start small. The goal isn't to become a Navy SEAL overnight. The goal is to keep promises to yourself. If you say you're going to wake up at 6 AM, do it. If you say you're going to write for 30 minutes, do it.</p>
-      <p>Every time you keep a promise to yourself, you build trust. And that trust is the foundation of confidence.</p>
-    `
-    },
-    "post-2": {
-        title: "Minimalism in Code and Life",
-        date: "Jan 15, 2026",
-        content: `
-      <p>We have a tendency to overcomplicate things. In software engineering, we add layers of abstraction "just in case." In life, we accumulate possessions "just in case."</p>
-      <p>But complexity is the enemy of execution.</p>
-      <h2>The Power of Subtraction</h2>
-      <p>Antoine de Saint-Exupéry wrote: "Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away."</p>
-      <p>This applies to your codebase, your schedule, and your mind.</p>
-    `
-    }
-};
+import blogData from "@/content/blog/posts.json";
 
 interface PageProps {
     params: Promise<{ slug: string }>;
@@ -40,7 +13,7 @@ interface PageProps {
 
 export default async function BlogPostPage({ params }: PageProps) {
     const { slug } = await params;
-    const post = posts[slug as keyof typeof posts];
+    const post = blogData[slug as keyof typeof blogData];
 
     if (!post) {
         // In a real app, you might want to show a custom 404

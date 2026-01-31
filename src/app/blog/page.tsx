@@ -4,6 +4,7 @@ import { Footer } from "@/components/layout/footer";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
+import blogData from "@/content/blog/posts.json";
 
 export default function BlogPage() {
     return (
@@ -24,23 +25,23 @@ export default function BlogPage() {
                 <section className="py-12">
                     <Container>
                         <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-                            {[1, 2, 3, 4, 5, 6].map((i) => (
-                                <Card key={i} className="flex flex-col border-stone-200 dark:border-stone-800 hover:border-stone-300 dark:hover:border-stone-700 transition-colors">
+                            {Object.entries(blogData).map(([slug, post]) => (
+                                <Card key={slug} className="flex flex-col border-stone-200 dark:border-stone-800 hover:border-stone-300 dark:hover:border-stone-700 transition-colors">
                                     <CardHeader>
-                                        <div className="text-sm font-medium text-stone-500 dark:text-stone-400 mb-2">Category</div>
+                                        <div className="text-sm font-medium text-stone-500 dark:text-stone-400 mb-2">{post.category}</div>
                                         <CardTitle className="text-xl">
-                                            <Link href={`/blog/post-${i}`} className="hover:underline">
-                                                The Title of Blog Post {i}
+                                            <Link href={`/blog/${slug}`} className="hover:underline">
+                                                {post.title}
                                             </Link>
                                         </CardTitle>
                                     </CardHeader>
                                     <CardContent className="flex-1">
                                         <p className="text-stone-600 dark:text-stone-300 line-clamp-3 mb-4">
-                                            A brief excerpt of the blog post goes here. It should be engaging and give the reader a reason to click through.
+                                            {post.excerpt}
                                         </p>
                                         <div className="mt-auto pt-4 flex items-center justify-between text-sm text-stone-500 dark:text-stone-400">
-                                            <span>Jan {i + 10}, 2026</span>
-                                            <span>5 min read</span>
+                                            <span>{post.date}</span>
+                                            <span>{post.readTime}</span>
                                         </div>
                                     </CardContent>
                                 </Card>

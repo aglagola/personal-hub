@@ -77,9 +77,15 @@ Navigation: Links correctly route between all major pages.
 Responsiveness: Navbar adapts to mobile (hamburger menu) and desktop.
 Theme: Light/Dark mode persists and applies correct Tailwind classes.
 
+### Content Management
+
+#### Managing Your Blog
+Blog posts are stored as JSON data for easy management. You can add, edit, or remove posts by modifying the `posts.json` file:
+- **File Path**: `src/content/blog/posts.json`
+- **Format**: Each post needs a unique key (the URL slug), along with a `title`, `date`, `category`, `excerpt`, `readTime`, and `content` (HTML).
+
 ### Next Steps
 
-Connect the "Join Community" form to a real provider (ConvertKit/Mailchimp).
-Replace placeholder blog content with real MDX files or a CMS (Sanity/Contentful).
-Add real project case studies.
+1. Connect the "Join Community" form to a real provider (ConvertKit/Mailchimp).
+2. Add real project case studies.
 Deploy to Vercel.

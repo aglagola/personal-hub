@@ -1,0 +1,18 @@
+{
+    "post-1": {
+        "title": "The Art of Discipline",
+        "date": "Jan 12, 2026",
+        "category": "Philosophy",
+        "excerpt": "Discipline is often misunderstood as a form of punishment or self-restriction. But it is actually the foundation of freedom.",
+        "readTime": "5 min read",
+        "content": "<p>Discipline is often misunderstood as a form of punishment or self-restriction. We tend to view the disciplined person as someone who denies themselves the pleasures of life—someone who says \"no\" to the second slice of cake, \"no\" to sleeping in, \"no\" to the immediate gratification.</p>\n<p>But this view is inverted. Discipline is not about restriction; it is about freedom.</p>\n<h2>The Freedom of Structure</h2>\n<p>When you have discipline, you are free from the tyranny of your own impulses. You are free from the chaos of indecision. When you have a plan and the discipline to execute it, you remove the burden of constant negotiation with yourself.</p>\n<p>Jocko Willink famously says, \"Discipline equals freedom.\" It sounds like a paradox, but it's the fundamental truth of high performance.</p>\n<h2>Building the Muscle</h2>\n<p>Start small. The goal isn't to become a Navy SEAL overnight. The goal is to keep promises to yourself. If you say you're going to wake up at 6 AM, do it. If you say you're going to write for 30 minutes, do it.</p>\n<p>Every time you keep a promise to yourself, you build trust. And that trust is the foundation of confidence.</p>"
+    },
+    "post-2": {
+        "title": "Minimalism in Code and Life",
+        "date": "Jan 15, 2026",
+        "category": "Minimalism",
+        "excerpt": "Complexity is the enemy of execution. Learn how the power of subtraction can clarify your work and mind.",
+        "readTime": "3 min read",
+        "content": "<p>We have a tendency to overcomplicate things. In software engineering, we add layers of abstraction \"just in case.\" In life, we accumulate possessions \"just in case.\"</p>\n<p>But complexity is the enemy of execution.</p>\n<h2>The Power of Subtraction</h2>\n<p>Antoine de Saint-Exupéry wrote: \"Perfection is achieved, not when there is nothing more to add, but when there is nothing left to take away.\"</p>\n<p>This applies to your codebase, your schedule, and your mind.</p>"
+    }
+}

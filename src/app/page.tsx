@@ -6,6 +6,7 @@ import Link from "next/link";
 import { ArrowRight, Mail, Instagram, Youtube, Linkedin, Github } from "lucide-react";
 import { XIcon } from "@/components/ui/icons";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import blogData from "@/content/blog/posts.json";
 
 import Image from "next/image";
 
@@ -118,18 +119,17 @@ export default function Home() {
             </div>
 
             <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-              {/* Placeholder Blog Posts */}
-              {[1, 2, 3].map((i) => (
-                <Card key={i} className="bg-transparent border-stone-200 dark:border-stone-800 shadow-none hover:bg-stone-100/50 dark:hover:bg-stone-900/50 transition-colors">
+              {Object.entries(blogData).slice(0, 3).map(([slug, post]) => (
+                <Card key={slug} className="bg-transparent border-stone-200 dark:border-stone-800 shadow-none hover:bg-stone-100/50 dark:hover:bg-stone-900/50 transition-colors">
                   <CardHeader>
-                    <div className="text-sm font-medium text-stone-500 dark:text-stone-400 mb-2">Philosophy</div>
-                    <CardTitle className="text-xl">The Art of Discipline</CardTitle>
+                    <div className="text-sm font-medium text-stone-500 dark:text-stone-400 mb-2">{post.category}</div>
+                    <CardTitle className="text-xl">{post.title}</CardTitle>
                   </CardHeader>
                   <CardContent>
                     <p className="text-stone-600 dark:text-stone-300 line-clamp-3">
-                      Discipline is not about punishment; it's about freedom. How structuring your day can liberate your mind.
+                      {post.excerpt}
                     </p>
-                    <Link href={`/blog/post-${i}`} className="inline-flex items-center mt-4 text-sm font-medium text-stone-900 hover:underline dark:text-stone-50">
+                    <Link href={`/blog/${slug}`} className="inline-flex items-center mt-4 text-sm font-medium text-stone-900 hover:underline dark:text-stone-50">
                       Read more <ArrowRight className="ml-1 h-4 w-4" />
                     </Link>
                   </CardContent>
