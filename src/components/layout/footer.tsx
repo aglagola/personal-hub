@@ -1,5 +1,6 @@
 import { Container } from "@/components/ui/container";
-import { Twitter, Linkedin, Mail, Instagram, Youtube } from "lucide-react";
+import { Linkedin, Mail, Instagram, Youtube } from "lucide-react";
+import { XIcon } from "@/components/ui/icons";
 
 export function Footer() {
     return (
@@ -28,7 +29,7 @@ export function Footer() {
                         </a>
                         <a href="https://x.com/adamglagola" target="_blank" rel="noreferrer" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
                             <span className="sr-only">X (Twitter)</span>
-                            <Twitter className="h-5 w-5" />
+                            <XIcon className="h-5 w-5" />
                         </a>
                         <a href="mailto:adamglagolaco@gmail.com" className="text-stone-500 transition-colors hover:text-stone-900 dark:hover:text-stone-50">
                             <span className="sr-only">Email</span>

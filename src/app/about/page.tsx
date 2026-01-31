@@ -15,25 +15,43 @@ export default function AboutPage() {
                             <div className="prose prose-stone dark:prose-invert prose-lg">
                                 <h1 className="font-serif text-4xl sm:text-5xl not-prose mb-8">About Adam</h1>
 
-                                <p className="lead">
-                                    I am a builder, thinker, and lifelong learner. My mission is to simplify the complex and build things that last.
+                                <p className="lead text-2xl font-light italic text-stone-700 dark:text-stone-300">
+                                    I am a receiver. My mission is to be a vessel of creation for the good of all consciousness.
                                 </p>
 
                                 <h2>My Story</h2>
                                 <p>
-                                    [Personal story placeholder] I started coding when I was... I realized that technology could...
+                                    My Name is Adam Glagola. <br />
+                                    Born on November 16th, 1990 in Chicago, Illinois.
                                 </p>
 
                                 <h2>Philosophy</h2>
-                                <p>
-                                    I believe in discipline, clarity, and continuous improvement. In a world of noise, I seek signal.
-                                </p>
+                                <blockquote className="not-prose border-l-2 border-stone-900 dark:border-stone-50 pl-6 my-8 flex flex-col gap-4">
+                                    <p className="text-xl italic leading-relaxed text-stone-800 dark:text-stone-200">
+                                        "I try to remain receptive, and open to all possible outcomes in any given situation."
+                                    </p>
+                                    <p className="text-xl italic leading-relaxed text-stone-800 dark:text-stone-200">
+                                        "I also tend to likeness of having a strong awareness as a foundation for life’s endeavors."
+                                    </p>
+                                </blockquote>
 
                                 <h2>Experience</h2>
-                                <ul>
-                                    <li>Role at Company A</li>
-                                    <li>Role at Company B</li>
-                                </ul>
+                                <div className="not-prose space-y-8 mt-8">
+                                    <div className="group relative border-l border-stone-300 dark:border-stone-700 pl-6 pb-2 transition-colors hover:border-stone-900 dark:hover:border-stone-50">
+                                        <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50">Sr. Delivery Tech Arch Analyst</h3>
+                                        <p className="text-lg text-stone-600 dark:text-stone-400">Accenture • 2015 — 2020</p>
+                                    </div>
+
+                                    <div className="group relative border-l border-stone-300 dark:border-stone-700 pl-6 pb-2 transition-colors hover:border-stone-900 dark:hover:border-stone-50">
+                                        <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50">Bachelor of Science Degree</h3>
+                                        <p className="text-lg text-stone-600 dark:text-stone-400">Economics & MIS • Illinois State University</p>
+                                    </div>
+
+                                    <div className="group relative border-l border-stone-300 dark:border-stone-700 pl-6 pb-2 transition-colors hover:border-stone-900 dark:hover:border-stone-50">
+                                        <h3 className="text-xl font-bold text-stone-900 dark:text-stone-50">NJCAA Division I Baseball</h3>
+                                        <p className="text-lg text-stone-600 dark:text-stone-400">South Suburban College</p>
+                                    </div>
+                                </div>
 
                                 <h2>Contact</h2>
                                 <p>
