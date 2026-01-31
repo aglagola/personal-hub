@@ -15,7 +15,7 @@ export default function ContactPage() {
                                 Get in Touch
                             </h1>
                             <p className="text-lg text-stone-600 dark:text-stone-400 mb-8">
-                                I'm always open to discussing new projects, creative ideas, or opportunities to be part of your visions.
+                                Open to Collab, Discuss new Projects, Creative ideas, or Opportunities.
                             </p>
 
                             <form className="space-y-6">
