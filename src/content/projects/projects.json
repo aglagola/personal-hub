@@ -5,14 +5,13 @@
         "links": {
             "github": "https://github.com/aglagola/personal-hub",
             "live": "/"
-        }
+        },
+        "image": "/projects/personal-hub-v2.png"
     },
     {
         "title": "Project Alpha",
-        "description": "A placeholder project to demonstrate the dynamic loading system. Exploring the intersection of design and functionality.",
-        "links": {
-            "github": "#",
-            "live": "#"
-        }
+        "description": "Coming Soon.",
+        "links": {},
+        "image": "/projects/project-alpha.png"
     }
 ]

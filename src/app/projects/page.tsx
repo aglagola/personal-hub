@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/com
 import Link from "next/link";
 import { ExternalLink, Github } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import Image from "next/image";
 
 import projectsData from "@/content/projects/projects.json";
 
@@ -29,10 +30,19 @@ export default function ProjectsPage() {
                         <div className="grid gap-6">
                             {projectsData.map((project, i) => (
                                 <div key={i} className="group relative grid grid-cols-1 md:grid-cols-2 gap-8 items-start border border-stone-200 dark:border-stone-800 rounded-lg p-8 hover:bg-stone-50 dark:hover:bg-stone-900/50 transition-colors">
-                                    <div>
-                                        <div className="aspect-video w-full rounded-md bg-stone-200 dark:bg-stone-800 object-cover flex items-center justify-center text-stone-400">
-                                            <span>Image Placeholder</span>
-                                        </div>
+                                    <div className="relative aspect-video w-full overflow-hidden rounded-md bg-stone-100 dark:bg-stone-900">
+                                        {project.image ? (
+                                            <Image
+                                                src={project.image}
+                                                alt={project.title}
+                                                fill
+                                                className="object-cover transition-transform duration-500 group-hover:scale-105"
+                                            />
+                                        ) : (
+                                            <div className="flex h-full w-full items-center justify-center text-stone-400">
+                                                <span>Image Placeholder</span>
+                                            </div>
+                                        )}
                                     </div>
                                     <div className="flex flex-col h-full">
                                         <h2 className="text-2xl font-serif font-bold text-stone-900 dark:text-stone-50 mb-2">{project.title}</h2>
