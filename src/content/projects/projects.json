@@ -1,0 +1,18 @@
+[
+    {
+        "title": "Personal Digital Headquarters",
+        "description": "A minimalist, high-performance personal website built with Next.js 14, Tailwind CSS, and Framer Motion. Features a dynamic blog system and dark mode support.",
+        "links": {
+            "github": "https://github.com/aglagola/personal-hub",
+            "live": "/"
+        }
+    },
+    {
+        "title": "Project Alpha",
+        "description": "A placeholder project to demonstrate the dynamic loading system. Exploring the intersection of design and functionality.",
+        "links": {
+            "github": "#",
+            "live": "#"
+        }
+    }
+]

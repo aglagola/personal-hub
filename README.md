@@ -80,12 +80,16 @@ Theme: Light/Dark mode persists and applies correct Tailwind classes.
 ### Content Management
 
 #### Managing Your Blog
-Blog posts are stored as JSON data for easy management. You can add, edit, or remove posts by modifying the `posts.json` file:
+Blog posts are stored as JSON data. You can add, edit, or remove posts by modifying:
 - **File Path**: `src/content/blog/posts.json`
 - **Format**: Each post needs a unique key (the URL slug), along with a `title`, `date`, `category`, `excerpt`, `readTime`, and `content` (HTML).
+
+#### Managing Your Projects
+Projects are also managed via a JSON file:
+- **File Path**: `src/content/projects/projects.json`
+- **Format**: An array of objects, each containing `title`, `description`, and a `links` object with `github` and `live` URLs.
 
 ### Next Steps
 
 1. Connect the "Join Community" form to a real provider (ConvertKit/Mailchimp).
 2. Add real project case studies.
-Deploy to Vercel.
